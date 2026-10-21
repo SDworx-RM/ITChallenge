@@ -1,0 +1,42 @@
+[
+  {
+    "id": "VAC-1042",
+    "title": "Medior DevOps Engineer",
+    "team": "Platform",
+    "location": "Utrecht (hybrid)",
+    "seniority": "medior",
+    "skills": ["kubernetes", "terraform", "azure", "github-actions", "bash"]
+  },
+  {
+    "id": "VAC-1043",
+    "title": "Senior Backend Developer (Node.js)",
+    "team": "Payroll Services",
+    "location": "Remote (NL/BE)",
+    "seniority": "senior",
+    "skills": ["node", "typescript", "postgresql", "rest", "docker"]
+  },
+  {
+    "id": "VAC-1044",
+    "title": "Security Engineer – Cloud",
+    "team": "SecOps",
+    "location": "Antwerp",
+    "seniority": "medior",
+    "skills": ["azure", "siem", "threat-modeling", "iam", "python"]
+  },
+  {
+    "id": "VAC-1045",
+    "title": "Junior Frontend Developer",
+    "team": "Employee Portal",
+    "location": "Amsterdam",
+    "seniority": "junior",
+    "skills": ["vue", "typescript", "css", "accessibility"]
+  },
+  {
+    "id": "VAC-1046",
+    "title": "Site Reliability Engineer",
+    "team": "Platform",
+    "location": "Utrecht (hybrid)",
+    "seniority": "senior",
+    "skills": ["kubernetes", "prometheus", "grafana", "go", "incident-response"]
+  }
+]
