@@ -11,3 +11,10 @@ npm run dev
 ```
 
 The API runs on `http://localhost:3000`.
+
+## Docker
+
+```bash
+cp .env.example .env
+docker compose up --build
+```
