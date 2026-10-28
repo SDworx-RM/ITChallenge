@@ -1,4 +1,5 @@
 const express = require('express');
+const config = require('./config');
 const vacancies = require('./routes/vacancies');
 const candidates = require('./routes/candidates');
 
@@ -12,7 +13,6 @@ app.get('/health', (req, res) => {
 app.use('/vacancies', vacancies);
 app.use('/candidates', candidates);
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {
-  console.log(`talent-pipeline listening on :${port}`);
+app.listen(config.port, () => {
+  console.log(`talent-pipeline listening on :${config.port}`);
 });
