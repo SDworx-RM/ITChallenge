@@ -18,3 +18,14 @@ The API runs on `http://localhost:3000`.
 cp .env.example .env
 docker compose up --build
 ```
+
+## API
+
+| Method | Path                | Description                         |
+| ------ | ------------------- | ----------------------------------- |
+| GET    | `/health`           | Liveness check                      |
+| GET    | `/vacancies`        | List vacancies (`?seniority=&skill=`) |
+| GET    | `/vacancies/:id`    | Vacancy details                     |
+| POST   | `/candidates/match` | Top 3 vacancies for a candidate     |
+
+See [docs/architecture.md](docs/architecture.md) for the bigger picture.
