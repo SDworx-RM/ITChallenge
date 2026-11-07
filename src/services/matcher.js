@@ -8,9 +8,9 @@ const SENIORITY_WEIGHT = 0.3;
  * Score a candidate against a vacancy. Returns a number between 0 and 100.
  */
 function scoreCandidate(candidate, vacancy) {
-  const candidateSkills = new Set(candidate.skills.map((s) => s.toLowerCase()));
+  const candidateSkills = new Set((candidate.skills || []).map((s) => s.toLowerCase()));
   const matched = vacancy.skills.filter((s) => candidateSkills.has(s));
-  const skillScore = matched.length / vacancy.skills.length;
+  const skillScore = vacancy.skills.length ? matched.length / vacancy.skills.length : 0;
 
   const gap = Math.abs(
     SENIORITY.indexOf(candidate.seniority) - SENIORITY.indexOf(vacancy.seniority)
